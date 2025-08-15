@@ -26,8 +26,8 @@ namespace Orion
                 await Task.Delay(30);
             }
 
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            LoginWindow loginWindow = new LoginWindow();
+            object value = loginWindow.Show();
             this.Close();
         }
     }
