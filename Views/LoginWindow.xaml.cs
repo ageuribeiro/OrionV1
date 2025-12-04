@@ -1,5 +1,4 @@
 ﻿using Orion.Views;
-
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -16,27 +15,27 @@ namespace Orion
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginWindow : Window
     {
         
-        public MainWindow()
+        public LoginWindow()
         {
-         
             InitializeComponent();
+
+            // Inicialize os campos com os controles definidos no XAML.
+            // Certifique-se de que os nomes dos controles no XAML sejam "txtEmailLogin" e "txtPassword".
+            txtEmailLogin = (TextBox)FindName("txtEmailLogin");
+            txtPassword = (PasswordBox)FindName("txtPassword");
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtEmailLogin.Text) &&
-               !string.IsNullOrWhiteSpace(txtPassword.Password))
+                !string.IsNullOrWhiteSpace(txtPassword.Password))
             {
                 // Verificando se os campos de login estão corretos
-                if(txtEmailLogin.Text=="ageu87@gmail.com" && txtPassword.Password == "07051982")
+                if (txtEmailLogin.Text == "ageu87@gmail.com" && txtPassword.Password == "07051982")
                 {
-                    // Abre a janela de Lista de usuários
-                    //UserLisWindow userList = new UserLisWindow();
-                    //userList.Show();
-
                     // Abre a janela de Dashboard
                     DashboardWindow dashboardWindow = new DashboardWindow();
                     dashboardWindow.Show();
@@ -55,7 +54,7 @@ namespace Orion
             else
             {
                 // Mostra uma mensagem de erro
-                MessageBox.Show("Informação Inválida.", "Error Message",MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Informação Inválida.", "Error Message", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

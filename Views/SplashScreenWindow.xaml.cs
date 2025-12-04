@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Imaging;
+using Orion.Views;
 
 namespace Orion
 {
@@ -20,14 +21,14 @@ namespace Orion
 
         private async Task CarregarAplicacaoAsync()
         {
-            for( int i=0;i<=100; i++)
+            for (int i = 0; i <= 100; i++)
             {
                 progressBar.Value = i;
                 await Task.Delay(30);
             }
 
             LoginWindow loginWindow = new LoginWindow();
-            object value = loginWindow.Show();
+            loginWindow.Show();
             this.Close();
         }
     }

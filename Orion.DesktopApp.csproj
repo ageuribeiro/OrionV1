@@ -23,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Orion.Application\Orion.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Assets\1-974d793f.ico">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
