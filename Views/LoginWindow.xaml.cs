@@ -1,27 +1,17 @@
 ﻿using Orion.Views;
-
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace Orion
+namespace Orion.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginWindow : Window
     {
-        
-        public MainWindow()
+
+        public LoginWindow()
         {
-         
+
             InitializeComponent();
         }
 
@@ -31,7 +21,7 @@ namespace Orion
                !string.IsNullOrWhiteSpace(txtPassword.Password))
             {
                 // Verificando se os campos de login estão corretos
-                if(txtEmailLogin.Text=="ageu87@gmail.com" && txtPassword.Password == "07051982")
+                if (txtEmailLogin.Text == "ageu87@gmail.com" && txtPassword.Password == "07051982")
                 {
                     // Abre a janela de Lista de usuários
                     //UserLisWindow userList = new UserLisWindow();
@@ -55,7 +45,7 @@ namespace Orion
             else
             {
                 // Mostra uma mensagem de erro
-                MessageBox.Show("Informação Inválida.", "Error Message",MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Informação Inválida.", "Error Message", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

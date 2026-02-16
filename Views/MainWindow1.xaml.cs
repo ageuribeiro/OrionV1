@@ -17,9 +17,9 @@ namespace Orion.Views
     /// <summary>
     /// Lógica interna para MainWindow1.xaml
     /// </summary>
-    public partial class MainWindow1 : Window
+    public partial class MainWindow : Window
     {
-        public MainWindow1()
+        public MainWindow()
         {
             InitializeComponent();
         }

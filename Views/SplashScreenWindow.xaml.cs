@@ -3,7 +3,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Imaging;
 
-namespace Orion
+
+namespace Orion.Views
 {
     public partial class SplashScreenWindow : Window
     {
@@ -20,7 +21,7 @@ namespace Orion
 
         private async Task CarregarAplicacaoAsync()
         {
-            for( int i=0;i<=100; i++)
+            for( int i = 0; i <= 100; i++)
             {
                 progressBar.Value = i;
                 await Task.Delay(30);
