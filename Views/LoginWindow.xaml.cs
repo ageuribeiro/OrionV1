@@ -1,4 +1,4 @@
-﻿using Orion.Views;
+using Orion.Views;
 using System.Windows;
 
 namespace Orion.Views
@@ -12,7 +12,7 @@ namespace Orion.Views
         public LoginWindow()
         {
 
-            InitializeComponent();
+               InitializeComponent();
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)

@@ -1,11 +1,10 @@
-﻿<Window x:Class="Orion.SplashScreenWindow"
+<Window x:Class="Orion.Views.SplashScreenWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent"
         Width="600" Height="300"
-        Topmost="True"
         ShowInTaskbar="False"
         WindowStartupLocation="CenterScreen">
     <Border CornerRadius="10" Background="White" Padding="0">

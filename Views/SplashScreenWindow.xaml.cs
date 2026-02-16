@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Imaging;
@@ -28,7 +28,7 @@ namespace Orion.Views
             }
 
             LoginWindow loginWindow = new LoginWindow();
-            object value = loginWindow.Show();
+            loginWindow.Show();
             this.Close();
         }
     }

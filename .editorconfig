@@ -1,0 +1,30 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{cs,xaml,xml}]
+indent_style = space
+indent_size = 4
+
+[*.cs]
+# C# specific rules
+dotnet_sort_system_directives_first = true
+csharp_style_var_elsewhere = false:suggestion
+csharp_style_var_for_built_in_types = false:suggestion
+csharp_new_line_before_open_brace = all
+
+[*.xaml]
+# Keep XAML formatting consistent
+indent_size = 2
+indent_style = space
+
+[*.{csproj,sln}]
+indent_style = space
+indent_size = 2
+
+# Ensure Visual Studio generates partial classes and matches naming
+# (no enforceable setting here; keep files aligned with namespaces)
