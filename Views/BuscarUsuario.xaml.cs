@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Orion
 {
     /// <summary>
-    /// Interaction logic for UserLisWindow.xaml
+    /// Interaction logic for BuscarUsuario.xaml
     /// </summary>
-    public partial class UserLisWindow : Window
+    public partial class BuscarUsuario : Window
     {
-        public UserLisWindow()
+        public BuscarUsuario()
         {
             InitializeComponent();
         }

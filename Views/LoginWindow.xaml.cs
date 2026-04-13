@@ -20,7 +20,7 @@ namespace Orion.Views
             if (!string.IsNullOrWhiteSpace(txtEmailLogin.Text) &&
                !string.IsNullOrWhiteSpace(txtPassword.Password))
             {
-                // Verificando se os campos de login estão corretos
+                // Validar se os dados de login existem no banco de dados
                 if (txtEmailLogin.Text == "ageu87@gmail.com" && txtPassword.Password == "07051982")
                 {
                     // Abre a janela de Lista de usuários
