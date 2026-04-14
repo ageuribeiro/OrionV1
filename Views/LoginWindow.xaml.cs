@@ -28,8 +28,8 @@ namespace Orion.Views
                     //userList.Show();
 
                     // Abre a janela de Dashboard
-                    DashboardWindow dashboardWindow = new DashboardWindow();
-                    dashboardWindow.Show();
+                    MainWindow mainWindow    = new MainWindow();
+                    mainWindow.Show();
 
                     // Fecha a janela atual de login
                     this.Close();

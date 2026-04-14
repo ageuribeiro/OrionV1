@@ -22,6 +22,7 @@ namespace Orion
         public MainWindow()
         {
             InitializeComponent();
+            main.Content = new Views.UsuarioBuscar();
         }
     }
 }
