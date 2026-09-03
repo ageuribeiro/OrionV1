@@ -1,12 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Orion
+
+namespace Orion.DatabaseOperations
 {
-    class DatabaseAdapter
+    internal class LoginDatabase
     {
     }
 }

@@ -14,7 +14,7 @@ namespace Orion.Controllers
 {
     public class UsuarioViewModel : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler? PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
         public ObservableCollection<Usuarios> Usuarios { get; set; }
         public ICommand BuscarUsuario { get; set; }
 
@@ -30,7 +30,7 @@ namespace Orion.Controllers
             Usuarios = new ObservableCollection<Usuarios>(usuariosList);
             NotifyPropertyChanged("Usuarios");
         }
-        public void NotifyPropertyChanged(string? propertyName = null)
+        public void NotifyPropertyChanged(string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
