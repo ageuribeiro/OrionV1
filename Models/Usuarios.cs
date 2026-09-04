@@ -17,13 +17,30 @@ namespace Orion.Models
         public string Senha { get; set; } = string.Empty;
         public string IdNivelAcesso { get; set; } = string.Empty;
 
+
+        public List<Usuarios> GetByName(string nome)
+        {
+            var users = GetUsuarios();
+            var user = from person in users
+                        where person.Nome.Equals(nome, StringComparison.OrdinalIgnoreCase)
+                        select person;
+            return user.ToList();
+        }
+
         public List<Usuarios> GetUsuarios()
         {
-            List<Usuarios> listaUsuarios = new List<Usuarios>()
+            var listaUsuarios = new List<Usuarios>();
+
+            for (int i=0; i< 20; i++)
             {
-                new Usuarios { Id =1, Nome = "João", Email = "joao@orion.com", Senha = "senha123", IdNivelAcesso = "Admin" },
-                new Usuarios{ Id =2, Nome ="Josefa", Email = "josefa@orion.com", Senha="senha789", IdNivelAcesso = "User" },
-                new Usuarios { Id =3, Nome = "Maria", Email = "maria@orion.com", Senha = "senha456", IdNivelAcesso = "User" }
+                listaUsuarios.Add(new Usuarios
+                {
+                    Id = 1,
+                    Nome = "João",
+                    Email = "joao@orion.com",
+                    Senha = "senha123",
+                    IdNivelAcesso = "Admin"
+                });
             };
 
             return listaUsuarios;
